@@ -1,0 +1,47 @@
+ Sistema de control carcelaria - Loja
+
+El objetivo del proyecto es desarrollar un sistema que gestione la lista de Personas 
+Privadas de la Libertad (PPL), los delitos cometidos por cada una de ellas y establecer 
+los días máximos de visitas permitidos. Además, ante la presencia de agravantes durante 
+el cumplimiento de la sentencia, se deberá aplicar un aumento de la pena y/o castigos 
+internos, lo que puede resultar en una reducción de los días de visita permitidos. Al 
+final, se generarán estadísticas con métricas importantes que permitirán la toma de 
+decisiones por parte de las autoridades penitenciarias.
+Requerimientos Funcionales:
+
+• Registro de Personas Privadas de la Libertad (PPL): Implementar un mecanismo 
+para registrar las PPL, incluyendo información como nombre, delitos cometidos 
+y fecha de ingreso.
+
+• Gestión de Delitos: Permitir la asignación de delitos a cada PPL, permitiendo 
+registrar información detallada sobre el delito cometido y su gravedad.
+
+• Control de Visitas: Establecer un límite máximo de días de visitas permitidos 
+para cada PPL y controlar el número de visitas recibidas por cada uno de ellos.
+
+• Manejo de Agravantes: En caso de agravantes durante el cumplimiento de la 
+sentencia, aplicar un aumento de la pena y/o castigos internos a la PPL en 
+cuestión, lo que puede llevar a una reducción de los días de visita permitidos.
+
+• Generación de Estadísticas: Desarrollar un mecanismo que genere estadísticas 
+sobre las PPL, incluyendo datos como número de delitos, días de visita 
+permitidos, aumento de la pena, entre otros. Estas estadísticas serán útiles para 
+las autoridades en la toma de decisiones.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ANALISIS:
+
+Datos de entrada:
+-Nombres
+-Delitos y gravedad
+-Fecha de ingreso
+-Dia de visitas
+Proceso:
+-Contabilizar los dias de visitas(diminuir en función de lo establecido por el penitenciario)
+-Aumento de pena (Según el agravante)
+-Generar estadisticas
+Datos de salida:
+-Lista de los presos
+-Estatus de cada preso( Sus dias de visitas, su pena, si ha sufrido un ahumento de la misma)
+------------------------
+Generar una matriz tipo cadena que guarde los nombres y pena(s) de un preso, y un vector de tipo real para los dias de visita, para que nos ayude a poder rrestar de manera más facil. (para no tener que transorformar de cadena a real).
+Asignar un codigo para 
